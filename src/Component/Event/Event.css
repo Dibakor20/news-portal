@@ -1,0 +1,8 @@
+.card{
+    width: 310px;
+    height: 230px;
+}
+.read-more{
+    color: rgb(192,192,192);
+    cursor: pointer;
+}
