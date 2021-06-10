@@ -20,3 +20,6 @@
     text-align: right;
     margin-right: 20px;
 }
+.card-text{
+    cursor: pointer;
+}

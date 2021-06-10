@@ -4,7 +4,7 @@ import Sidebar from '../Sidebar/Sidebar';
 import './News.css'
 
 const News = ({ toggleState }) => {
-    const [news, setNews] = useState()
+    const [news, setNews] = useState({})
     const [blogs, setBlogs] = useState(6)
 
     const handleClickNext = () => {
@@ -30,7 +30,7 @@ const News = ({ toggleState }) => {
                     <div className="col-md-9 news-bavkground">
                         <div className="row m-5">
                             {
-                                news?.data.slice(0, blogs).map(item => <div className="col-md-4 mb-4" ><Event toggleState={toggleState} item={item} key={item.id} ></Event></div>)
+                                news?.data?.slice(0, blogs).map(item => <div className="col-md-4 mb-4" ><Event toggleState={toggleState} item={item} key={item.id} ></Event></div>)
                             }
 
                             <div className="d-block mx-auto">

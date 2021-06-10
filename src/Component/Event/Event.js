@@ -7,13 +7,16 @@ const Event = ({item,toggleState}) => {
     const { title, summary, published } = item;
     // const { toggleState } = props.toggleState
     const [isRead, setIsRead] = useState(false);
+    const [show,setShow] = useState(true)
 
- 
+    const removeBtn = () => {
+        setShow(false)
+    }
   
     return (
         <>
-            <div class="card" >
-            <div className="remove-icon"> <i class="fal fa-times"></i></div>
+            <div class={`card ${show? "" : "invisible"}`}  >
+            <div onClick={()=>removeBtn()} className="remove-icon"> <i class="fal fa-times"></i></div>
                 <div class="card-body">
                     <h5 class="card-title">{title?.slice(0,40)}</h5>
                     <p class="card-text" >
@@ -24,7 +27,7 @@ const Event = ({item,toggleState}) => {
 
                             isRead ?
                             
-                            <Modal item={item}></Modal>
+                            <Modal item={item} setIsRead={setIsRead}></Modal>
                             
                             
                             : ''
