@@ -24,10 +24,10 @@ const Sidebar = ({ toggleState, setToggleState, drawerState, setDrawerState }) =
                         <h3> </h3>
                         <div className={drawerState ? "toggle d-none" : "toggle"}>
                             <h3 className="text-center">View Toggle</h3>
-                            <div className="view-toggle ">
+                            <div className="view-toggle  d-block mx-auto">
 
-                                <i onClick={() => setToggleState(true)} class={toggleState ? 'toggle-active toggle-one fas fa-sliders-h-square ' : 'toggle-one fas fa-sliders-h-square'}></i>
-                                <i onClick={() => setToggleState(false)} class={toggleState ? 'toggle-one fas fa-sliders-h-square' : 'toggle-active  toggle-one fas fa-sliders-h-square'}></i>
+                                <i onClick={() => setToggleState(true)} class={toggleState ? 'toggle-active toggle-one fas fa-th ' : 'toggle-one fas fa-th'}></i>
+                                <i onClick={() => setToggleState(false)} class={toggleState ? 'toggle-one far fa-list-ul' : 'toggle-active  toggle-one far fa-list-ul'}></i>
 
                             </div>
                         </div>
@@ -35,8 +35,8 @@ const Sidebar = ({ toggleState, setToggleState, drawerState, setDrawerState }) =
                     <li>
                         <div className="feedback">
                             <h3 className="text-center">Have a feedback</h3>
-                            <button onClick={()=>setDrawerState(true)} className={drawerState?"d-none":'btn btn-primary d-block mx-auto'}>We are lisenting</button>
-                            <button onClick={()=>setDrawerState(false)}  className={drawerState?"btn btn-danger d-block  mx-auto":'d-none'}>We are lisenting</button>
+                            <button onClick={()=>setDrawerState(true)} className={drawerState?"d-none":'main-button d-block mx-auto'}>We are lisenting!</button>
+                            <button onClick={()=>setDrawerState(false)}  className={drawerState?"danger-button d-block  mx-auto":'d-none'}>We are lisenting!</button>
                         </div>
                     </li>
                 </ul>

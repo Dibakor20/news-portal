@@ -28,15 +28,19 @@ const News = ({ toggleState }) => {
                         {/* <Sidebar></Sidebar> */}
                     </div>
                     <div className="col-md-9 news-bavkground">
-                        <div className="row mt-5">
+                        <div className="row m-5">
                             {
-                                news?.data.slice(0, blogs).map(item => <div className="col-md-4 mb-2 " ><Event toggleState={toggleState} item={item} key={item.id} ></Event></div>)
+                                news?.data.slice(0, blogs).map(item => <div className="col-md-4 mb-4" ><Event toggleState={toggleState} item={item} key={item.id} ></Event></div>)
                             }
 
                             <div className="d-block mx-auto">
-                                <button type="button" className="btn btn-success mr-4" onClick={handleClickPrevious}>
+                            {
+                                    blogs === 6 ? <button type="button" className="btn btn-success disabled mr-4" >
                                     Previous
-                            </button>
+                                </button> : <button type="button" className="btn btn-success mr-4" onClick={handleClickPrevious}>
+                                    Previous
+                                </button>
+                                }
                                 <button type="button" className="btn btn-success px-4" onClick={handleClickNext}>
                                     Next
                             </button>
@@ -48,10 +52,22 @@ const News = ({ toggleState }) => {
                         {/* <Sidebar></Sidebar> */}
                     </div>
                     <div className="col-md-9 news-bavkground">
-                        <div className="row mt-5">
+                        <div className="row mt-5 ">
                             {
-                                news?.data.slice(0, blogs).map(item => <div className="col-md-12 mb-3"><Event toggleState={toggleState} item={item} key={item.id} ></Event></div>)
+                                news?.data.slice(0, blogs).map(item => <div className="col-md-11 mb-4 ml-5"><Event toggleState={toggleState} item={item} key={item.id} ></Event></div>)
                             }
+                              <div className="d-block mx-auto">
+                                {
+                                    blogs === 6 ? <button type="button" className="btn btn-success disabled mr-4" >
+                                    Previous
+                                </button> : <button type="button" className="btn btn-success mr-4" onClick={handleClickPrevious}>
+                                    Previous
+                                </button>
+                                }
+                                <button type="button" className="btn btn-success px-4" onClick={handleClickNext}>
+                                    Next
+                            </button>
+                            </div>
 
                         </div>
                     </div>

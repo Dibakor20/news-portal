@@ -1,13 +1,22 @@
 .card-vir{
     width: 800px;
-    /* height: 150px; */
     /* border: 1px solid rgb(133, 128, 128); */
 }
-.card-hor{
-    width: 310px;
-    /* height: 330px !important; */
+ .card-hor{
+    width: 210px;
+    height: 330px !important;
 }
 .read-more{
     color: rgb(192,192,192);
     cursor: pointer;
+}
+.card{
+    height: 240px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px grey;
+}
+.remove-icon{
+    color: red !important;
+    text-align: right;
+    margin-right: 20px;
 }

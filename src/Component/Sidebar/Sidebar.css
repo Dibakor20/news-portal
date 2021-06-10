@@ -35,28 +35,41 @@
 }
 
 .view-toggle {
-    background-color: rgb(255, 255, 255);
+    background-color:#EBF3FD;
     border: 1px solid #ddd;
     border-radius: 5px;
-    width: 70%;
-    margin-left: 40px;
+    width: 122px;
 }
 
 .toggle-one {
-    font-size: 60px;
-    margin-left: 30px;
+    font-size: 30px;
+    padding: 15px;
 }
 
 .toggle-two {
-    font-size: 60px;
-    margin-left: 50px;
-
+    font-size: 30px;
+    padding: 15px;
 }
 
 .toggle-active {
-
-    background: red;
-
+    background:#00cc99;
 }
-
+.main-button{
+    background:#00cc99;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 10px;
+}
+.main-button:active{
+    outline: none;
+}
+.danger-button{
+    background:#ff6666;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 10px;
+}
+.danger-button:active{
+    outline: none;
+}
 

@@ -15,25 +15,9 @@ function App() {
     <>
      <Router>
        <Switch>
-
-
-
-         <Route path="/news">
-           <News/>
-         </Route>
-         
-
-           
-         <Route path="/dashboard">
-           <Dashboard></Dashboard>
-         </Route>
-         
-
-
-
-
+        
          <Route path="/">
-           <News/>
+           <Dashboard/>
          </Route>
        </Switch>
      </Router>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Feedback from '../Feedback/Feedback';
 import './SidebarDrawer.css'
 
 
@@ -10,7 +11,7 @@ const SidebarDrawer = ({drawerState}) => {
             </div>
             <div className="col-md-9 news-bavkground">
                 <div className="row ml-5 mt-5">
-                    <h1>Form</h1>
+                   <Feedback/>
                 </div>
             </div>
         </div>
